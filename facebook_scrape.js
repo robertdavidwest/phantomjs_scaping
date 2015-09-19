@@ -33,7 +33,6 @@ page.onLoadFinished = function(){
 	if(i==0){
 		page.evaluate(fillLoginInfo, fb_password);
 		i++;
-
 	}
 	else if (i==1) {
 		// Go to Profile screen
@@ -59,18 +58,16 @@ page.onLoadFinished = function(){
 	    );
 		i++;
 	}
-	/*
-	if (i==3){
+	else if (i==3){
 	    //page.scrollPosition = {top: 1000, left: 0};
 		page.evaluate(
 			function() {
-				window.scrollTo(0, 50);
+				window.scrollBy(0, 1000);
 			}
 		);
 		i++;
 		return;
 	}
-	*/
 	else {
 		page.render('screenshot.png');
 		fs.write('friends.html', page.content, 'w');

@@ -1,3 +1,7 @@
+### Web Scraping with Phantomjs
+
+Install phantomjs on your machine then run any of the `.js` file below using the command: `phantomjs filename.js` in the command line
+
 
 ### Using phantomjs to scrape data from facebook
 
@@ -10,3 +14,7 @@
 
 * I want to extract all friend names. Then use the names to go back to facebook and pull friend information such as location 
 * Ultimately the goal being to be able to sort friends alphabetically, and search through friends by location (the functionality that once existed on facebook)
+
+### Using phantomjs to scrape retail fx quotes from different sources
+
+* torfx_scrape.js
